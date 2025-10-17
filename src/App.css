@@ -39,3 +39,17 @@ footer, footer p, footer a, .footer-bottom {
   margin-bottom: 0;
   padding: 0;
 }
+
+.homeImage {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* height: 100vh; */
+}
+
+button {
+  border-radius: 15px;
+  background-color: white;
+  color: black;
+  padding: 5px;
+}
