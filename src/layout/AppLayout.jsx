@@ -41,12 +41,17 @@ export const AppLayout = () => {
         "home_background4.jpg",
         "home_background5.jpg",
     ];
-
-    const [currentIndex, setCurrentIndex] = useState(0);
+    const cacheCurrentIndex = parseInt(localStorage.currentIndex);
+    debugger;
+    const [currentIndex, setCurrentIndex] = useState(cacheCurrentIndex || 0);
 
     useEffect(()=> {
         const timer = setTimeout(() => {
-        setCurrentIndex((prev) => (prev + 1) % images.length);
+        setCurrentIndex((prev) => {
+            const index = (prev + 1) % images.length;
+            localStorage.currentIndex = index;
+            return index;
+        });
         }, 10000);
 
         return () => clearTimeout(timer);
