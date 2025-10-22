@@ -9,7 +9,7 @@ import { FaAndroid } from 'react-icons/fa';
 import { BiLogoFirebase } from 'react-icons/bi';
 import { DiDart } from 'react-icons/di';
 import { PiFileSql } from 'react-icons/pi';
-import { SiSqlite } from 'react-icons/si';
+import { SiApachecordova, SiSqlite } from 'react-icons/si';
 import avshek from "../assets/avshek1.jpg"
 import { BsBootstrap } from "react-icons/bs";
 import { Projects } from "./Projects";
@@ -25,7 +25,11 @@ export const Home = () => {
                 <br/>
                 <p className="font-bold  text-2xl">Front-end Developer 👋</p>
                 <br/>
-                <p className="w-100">I build vibrant, interactive user interfaces suing React & Flutter. With 3+ years in JavaScript and experience leading checklist & inspection tooling at Procit, I deliver beautiful performance apps</p>
+                {/* <p className="w-100">I build vibrant, interactive user interfaces suing React & Flutter. With 3+ years in JavaScript and experience leading checklist & inspection tooling at Procit, I deliver beautiful performance apps</p> */}
+                <p className="leading-relaxed text-justify">
+ Specializing in creating responsive and intuitive web apps. I focus on building high-performance interfaces using modern technologies like <strong>React</strong>, delivering seamless user experiences across platforms.</p>
+Experienced in hybrid app development and working with international teams to deliver scalable digital products.
+
                 <div className="flex flex-row gap-10 my-10">
                     <button className="px-4 py-2">
                         <span>View My Work</span>
@@ -103,6 +107,12 @@ export const Home = () => {
             </div>
             <div className="skillItem">
                 <div className="w-16 h-16  text-white flex items-center justify-center rounded-full text-xl font-bold">
+                    <SiApachecordova className="w-100 h-100" />
+                </div>
+                <p>Cordova</p>
+            </div>
+            <div className="skillItem">
+                <div className="w-16 h-16  text-white flex items-center justify-center rounded-full text-xl font-bold">
                     <FaAndroid className="w-100 h-100" />
                 </div>
                 <p>Android</p>
@@ -132,18 +142,37 @@ export const Home = () => {
                 <p>Github</p>
             </div>
         </div>
-        <div className="experience">
+        <div className="experience opacity-75 bg-black m-20 rounded-lg p-10">
             <h1 className="">Experience</h1>
             <div className="flex flex-row justify-between w-full">
-                <p className="mx-20 text-xl">Procit</p>
+                <p className="mx-20 text-xl"><strong>Procit BV</strong></p>
                 <p className=" mx-20 text-lg" >(July-2022 to Oct-2025)</p>
             </div>
-            <p className="text-left mx-20 text-sm">(Front-end developer)</p>
-            
-            <p className="mx-20 my-5">3+ years of experience in front-end development, specializing in creating dynamic and responsive user interfaces using React and Flutter. Proven track record of delivering high-quality web and mobile applications that enhance user engagement and drive business growth.</p>
+            <p className="text-left mx-20 text-sm">(Front-end developer) 3+ yrs</p>
+
+{/* <p className="mx-20 my-5 text-justify leading-relaxed">
+  At <strong>Procit BV</strong>, I worked for 3 yrs and 4 months as a <strong>Front-End Developer</strong>, focusing on web and Android app development using <strong>Cordova</strong>.  
+  I led the development of the company’s flagship <strong>Checklist</strong> product — a digital inspection and maintenance platform designed to streamline data collection and reporting for industries such as manufacturing and oil & gas.  
+  My primary role involved building responsive user interfaces, integrating APIs, and optimizing the overall front-end performance to ensure a seamless user experience across platforms.  
+  I occasionally worked with <strong>AngularJS</strong> and <strong>Java</strong> for feature enhancements and used <strong>SQLite</strong> and <strong>SQL Server Management</strong> for light database operations, such as viewing logs and running basic queries.  
+  Throughout the project, I collaborated closely with project leaders in the <strong>Netherlands</strong> to deliver scalable solutions and assisted global clients including <strong>Moduresource</strong>, <strong>Aboma</strong>, <strong>MRUSA</strong>, <strong>Impala</strong>, and others.
+</p> */}
+
+            <div className="mx-20 my-5">
+                <ul className="list-disc list-inside space-y-2 text-justify leading-relaxed">
+                    <li>Led the development of the company’s flagship <strong>Checklist</strong> product — a digital inspection and maintenance platform for industries like manufacturing and oil & gas.</li>
+                    <li>Built responsive user interfaces, integrated APIs, and optimized front-end performance to deliver a seamless user experience across web and Android platforms.</li>
+                    <li>Occasionally worked with <strong>AngularJS</strong> and <strong>Java</strong> for feature enhancements.</li>
+                    <li>Performed light database operations using <strong>SQLite</strong> and <strong>SQL Server Management</strong>, such as viewing logs and running basic queries.</li>
+                    <li>Collaborated closely with project leaders in the <strong>Netherlands</strong> to deliver scalable and reliable solutions.</li>
+                    <li>Assisted global clients including <strong>Moduresource</strong>, <strong>Aboma</strong>, <strong>MRUSA</strong>, <strong>Impala</strong>, and others.</li>
+                </ul>
+            </div>
+
+
         </div>
-        <div>
-            <h1>Projects</h1>
+        <div className="">
+            
             <ProjectList />
         </div>
     </>

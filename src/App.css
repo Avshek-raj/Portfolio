@@ -65,3 +65,7 @@ button:hover{
   margin-left: 25px;
 
 }
+
+a.active {
+  color: red;
+}
