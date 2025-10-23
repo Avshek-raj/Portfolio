@@ -66,7 +66,7 @@ export const AppLayout = () => {
           className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ${
             i === currentIndex ? "opacity-100" : "opacity-0"
           }`}
-          style={{ backgroundImage: `url(/src/assets/${img})` }}
+          style={{ backgroundImage: `url(/images/${img})` }}
         ></div>
       ))}
 
