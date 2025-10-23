@@ -19,7 +19,28 @@ export const ProjectList = () => {
             description: "My personal portfolio website to showcase my projects and skills.",
             githubLink: "https://github.com/Avshek-raj/Portfolio",
             language: ["React", "JavaScript"],
-            demoLink: "#"
+            demoLink: ""
+        },
+        {
+            title: "System management service",
+            description: "A windows app made using Swing and MySQL for database to provide and get services.",
+            githubLink: "https://github.com/Avshek-raj/System-Managent-Service",
+            language: ["Java", "MySQL"],
+            demoLink: ""
+        },
+        {
+            title: "ImageChat",
+            description: "A windows app where users can chat with AI bot using images as input.",
+            githubLink: "https://github.com/Avshek-raj/ImageChat",
+            language: ["Java", "Room"],
+            demoLink: ""
+        },
+        {
+            title: "BuyNsell",
+            description: "A webapp where users can buy and sell goods.",
+            githubLink: "https://github.com/Avshek-raj/BuyNsell",
+            language: ["JavaScript"],
+            demoLink: "https://avshek-raj.github.io/BuyNsell/#"
         },
     ]
     return <>
@@ -28,12 +49,12 @@ export const ProjectList = () => {
             <ul className="flex flex-row flex-wrap justify-center mt-15">
                 {projects.map((project, index) => {
                     return (
-                        <div key={index} className="bg-white/10 mx-25 hover:scale-101 border p-4 my-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div key={index} className="w-120 bg-white/10 mx-25 hover:scale-101 border p-4 my-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
                             <div key={index} className="bg-white/20 border p-4 rounded-lg hover:scale-101 hover:bg-white/40 transition-colors duration-300 cursor-pointer">
                                 <h2 className="text-2xl font-bold mb-2">{project.title}</h2>
                                 <p className="mb-4">{project.description}</p>
                             </div>
-                            <div className="mb-2 justify-between flex gap-20">
+                            <div className="mb-2 justify-between flex ">
                                 <div className="language-section flex flex-row">
                                     {project.language.map((lang, langIndex) => (
                                         <span key={langIndex} className="my-2 block border text-sm px-2 py-1 rounded-sm mr-2">{lang}</span>

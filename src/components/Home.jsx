@@ -7,7 +7,7 @@ import { FaFlutter } from 'react-icons/fa6';
 import { FaJava } from 'react-icons/fa';
 import { FaAndroid } from 'react-icons/fa';
 import { BiLogoFirebase } from 'react-icons/bi';
-import { DiDart } from 'react-icons/di';
+import { DiDart, DiDocker } from 'react-icons/di';
 import { PiFileSql } from 'react-icons/pi';
 import { SiApachecordova, SiSqlite } from 'react-icons/si';
 import avshek from "../assets/avshek1.jpg"
@@ -31,7 +31,7 @@ export const Home = () => {
 Experienced in hybrid app development and working with international teams to deliver scalable digital products.
 
                 <div className="flex flex-row gap-10 my-10">
-                    <button className="px-4 py-2">
+                    <button className="px-4 py-2" onClick={() => window.open(window.location.href + "projects", "_self")}>
                         <span>View My Work</span>
                         <span className="font-bold text-xl pl-2">➡︎</span>
                     </button>
@@ -45,18 +45,18 @@ Experienced in hybrid app development and working with international teams to de
             </div>
             <div className="flex flex-1 justify-center">
                 <div className="hover:scale-110 transition-size duration-500">
-                    {/* <img
+                    <img
                         src={avshek}
                         alt="Avshek"
-                        className="w-[550px] h-[550px] rounded-full  shadow-2xl shadow-black"
-                    /> */}
+                        className="mt-10 w-[400px] h-[400px] rounded-full object-cover  shadow-2xl shadow-black"
+                    />
                 </div>
             </div>
 
 
         </div>
         <h1>Skills</h1>
-        <div className="skills flex flex-wrap flex-row mx-18 my-5">
+        <div className="skills mt-10 flex flex-wrap flex-row mx-18 my-5">
             <div className="skillItem">
                 <div className="w-16 h-16  text-white flex items-center justify-center rounded-full text-xl font-bold">
                     <FaHtml5 className="w-100 h-100" />
@@ -141,10 +141,16 @@ Experienced in hybrid app development and working with international teams to de
                 </div>
                 <p>Github</p>
             </div>
+            <div className="skillItem">
+                <div className="w-16 h-16 text-white flex items-center justify-center rounded-full text-xl font-bold">
+                    <DiDocker className="w-100 h-100" />
+                </div>
+                <p>Docker</p>
+            </div>
         </div>
         <div className="experience opacity-75 bg-black m-20 rounded-lg p-10">
             <h1 className="">Experience</h1>
-            <div className="flex flex-row justify-between w-full">
+            <div className="flex mt-10 flex-row justify-between w-full">
                 <p className="mx-20 text-xl"><strong>Procit BV</strong></p>
                 <p className=" mx-20 text-lg" >(July-2022 to Oct-2025)</p>
             </div>
