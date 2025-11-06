@@ -1,12 +1,31 @@
+import { useRef, useState } from "react"
 import { MdSend } from "react-icons/md"
 import { Form } from "react-router"
+import emailjs from "@emailjs/browser"
+import { Popup } from "../ui/Popup"
 
 export const Contact = () => {
+    const form = useRef();
+    const [popupObj, setPopupObj] = useState(null);
+    
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_ckvy2hv', 'template_9nwgl8p', form.current, {publicKey: 'K6aZHar6zL-pCBKOP'}).then((res) => {
+            setPopupObj({title: "Success", message: "Message sent sucessfully. Will get back to you as soon as possible."})
+            form.current.reset();
+        }, (error)=> {
+            setPopupObj({title: "Error", message: "Something went wrong. Please try again."})
+            console.log(error);
+        })
+    }
+
     return <>
+    <Popup popupObj={popupObj}/>
         <h1 className="">Contact Me</h1>
         <div className="flex items-center justify-between col-span-2 min-h-screen ">
             <div className="mx-20 w-full bg-white/10 border p-8 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-300">
-                <form className="flex flex-col">
+                <form className="flex flex-col" ref={form} onSubmit={sendEmail}>
                     <label htmlFor="name" className="text-left mb-2">Name:</label>
                     <input
                         type="text"

@@ -42,7 +42,6 @@ export const AppLayout = () => {
         "home_background5.jpg",
     ];
     const cacheCurrentIndex = parseInt(localStorage.currentIndex);
-    debugger;
     const [currentIndex, setCurrentIndex] = useState(cacheCurrentIndex || 0);
 
     useEffect(()=> {
