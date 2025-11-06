@@ -45,7 +45,7 @@ Experienced in hybrid app development and working with international teams to de
             </div>
             <div className="flex flex-1 justify-center">
                 <div className="hover:scale-110 transition-size duration-500">
-                    <img
+                    <img loading = "lazy"
                         src={avshek}
                         alt="Abhishek Raj Singh"
                         className="mt-10 w-[400px] h-[400px] rounded-full object-cover  shadow-2xl shadow-black"
