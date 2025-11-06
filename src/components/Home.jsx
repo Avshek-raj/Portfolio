@@ -17,7 +17,7 @@ import { ProjectList } from "../ui/ProjectList";
 
 export const Home = () => {
     return <>
-        <div className="px-20 flex flex-row col-span-2 h-screen">
+        <div className="px-20 flex flex-row col-span-2">
             <div className="text-start flex-1">
                 <p className="font-bold  text-8xl [text-shadow:_2px_2px_10px_black]">Hi, I'm</p>
                 <p className="font-bold text-red-500 text-8xl hover:text-[6.2rem] transition-size duration-300 [text-shadow:_2px_2px_10px_black]">Abhishek Raj</p>
