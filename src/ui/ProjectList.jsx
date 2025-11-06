@@ -1,11 +1,18 @@
 export const ProjectList = () => {
     const projects = [
         {
+            title: "NepAnime",
+            description: "A anime streaming web app, where users can view all sorts or anime and watch them.",
+            githubLink: "https://github.com/Avshek-raj/Nepanime",
+            language: ["React, JavaScript"],
+            demoLink: "https://nepanime.vercel.app/"
+        },
+        {
             title: "Nepflix",
             description: "A simple webapp, that shows latest movies with their trailers.",
             githubLink: "https://github.com/Avshek-raj/Nepflix",
             language: ["JavaScript"],
-            demoLink: "https://avshek-raj.github.io/Nepflix/"
+            demoLink: "https://nepflix.vercel.app/"
         },
         {
             title: "Foodrush",
@@ -61,11 +68,13 @@ export const ProjectList = () => {
                                     ))}
                                 </div>
                                 <div className="action-button flex flex-row ">
-                                    <a href={project.demoLink} target="_blank" rel="noopener noreferrer" className="mr-2 ">
+                                    {project.demoLink ? 
+                                    <a href={project.demoLink || ""} target="_blank" rel="noopener noreferrer" className="mr-2 ">
                                         <button className="my-2 text-sm h-7 px-3 flex items-center rounded-sm justify-center ">
                                             Demo
                                         </button>
                                     </a>
+                                    : ""}
                                     <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="mr-2 ">
                                         <button className="my-2 text-sm h-7 px-3 flex items-center justify-center ">
                                             Github
