@@ -1,18 +1,25 @@
 export const ProjectList = () => {
     const projects = [
         {
-            title: "NepAnime",
-            description: "A anime streaming web app, where users can view all sorts or anime and watch them.",
-            githubLink: "https://github.com/Avshek-raj/Nepanime",
-            language: ["React, JavaScript"],
-            demoLink: "https://nepanime.vercel.app/"
+            title: "AskDoks",
+            description: "AskDocks is a document Q&A chatbot, where user can upload their documents and ask anything about the document content.",
+            githubLink: "https://github.com/Avshek-raj/AskDocks",
+            language: ["Python", "Streamlit", "LangChain"],
+            demoLink: ""
         },
         {
-            title: "Nepflix",
-            description: "A simple webapp, that shows latest movies with their trailers.",
-            githubLink: "https://github.com/Avshek-raj/Nepflix",
-            language: ["JavaScript"],
-            demoLink: "https://nepflix.vercel.app/"
+            title: "RoboPlan AI ",
+            description: "A web app that detects objects in room images, generate robot task plans from natural language instructions, and simulate execution with obstacle avoidance in a Canvas-based 2D environment.",
+            githubLink: "https://github.com/Avshek-raj/RoboPlan-AI",
+            language: ["React", "TypeScript", "Gemini AI"],
+            demoLink: "https://roboplanai.vercel.app/"
+        },
+        {
+            title: "RoboVision",
+            description: "A web app that analyzes images from a robot’s perspective. Users can capture images via camera or upload files, and the app processes them to simulate robotic perception for autonomous indoor robots",
+            githubLink: "https://github.com/Avshek-raj/RoboVision",
+            language: ["React", "TypeScript", "Gemini AI"],
+            demoLink: "https://robovision.vercel.app/"
         },
         {
             title: "Foodrush",
@@ -53,18 +60,18 @@ export const ProjectList = () => {
     return <>
         <div className="flex flex-row flex-wrap justify-center">
             <h1>Projects</h1>
-            <ul className="flex flex-row flex-wrap justify-center mt-15">
+            <ul className="flex flex-row flex-wrap justify-between m-15">
                 {projects.map((project, index) => {
                     return (
-                        <div key={index} className="w-120 bg-white/10 mx-25 hover:scale-101 border p-4 my-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div key={index} className="w-120 bg-white/10 hover:scale-101 border p-4 my-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
                             <div key={index} className="bg-white/20 border p-4 rounded-lg hover:scale-101 hover:bg-white/40 transition-colors duration-300 cursor-pointer">
                                 <h2 className="text-2xl font-bold mb-2">{project.title}</h2>
-                                <p className="mb-4">{project.description}</p>
+                                <p className="mb-4">{project.description.length > 135 ? project.description.substring(0, 135) + "..." : project.description}</p>
                             </div>
-                            <div className="mb-2 justify-between flex ">
+                            <div className="mb-2 justify-between flex gap-2">
                                 <div className="language-section flex flex-row">
                                     {project.language.map((lang, langIndex) => (
-                                        <span key={langIndex} className="my-2 block border text-sm px-2 py-1 rounded-sm mr-2">{lang}</span>
+                                        <span key={langIndex} className="w-auto my-2 block border text-sm px-2 py-1 rounded-sm mr-2 ">{lang}</span>
                                     ))}
                                 </div>
                                 <div className="action-button flex flex-row ">

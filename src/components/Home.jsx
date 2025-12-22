@@ -7,7 +7,7 @@ import { FaFlutter } from 'react-icons/fa6';
 import { FaJava } from 'react-icons/fa';
 import { FaAndroid } from 'react-icons/fa';
 import { BiLogoFirebase } from 'react-icons/bi';
-import { DiDart, DiDocker } from 'react-icons/di';
+import { DiDart, DiDocker, DiPython } from 'react-icons/di';
 import { PiFileSql } from 'react-icons/pi';
 import { SiApachecordova, SiSqlite } from 'react-icons/si';
 import avshek from "../assets/avshek1.jpg"
@@ -23,7 +23,7 @@ export const Home = () => {
                 <p className="font-bold text-red-500 text-8xl hover:text-[6.2rem] transition-size duration-300 [text-shadow:_2px_2px_10px_black]">Abhishek Raj</p>
                 <p className="font-bold text-yellow-100 text-8xl [text-shadow:_2px_2px_10px_black]">Singh</p>
                 <br/>
-                <p className="font-bold  text-2xl">Front-end Developer 👋</p>
+                <p className="font-bold  text-2xl">Software Engineer 👋</p>
                 <br/>
                 {/* <p className="w-100">I build vibrant, interactive user interfaces suing React & Flutter. With 3+ years in JavaScript and experience leading checklist & inspection tooling at Procit, I deliver beautiful performance apps</p> */}
                 <p className="leading-relaxed text-justify">
@@ -147,6 +147,12 @@ Experienced in hybrid app development and working with international teams to de
                 </div>
                 <p>Docker</p>
             </div>
+            <div className="skillItem">
+                <div className="w-16 h-16 text-white flex items-center justify-center rounded-full text-xl font-bold">
+                    <DiPython className="w-100 h-100" />
+                </div>
+                <p>Python</p>
+            </div>
         </div>
         <div className="experience opacity-75 bg-black m-20 rounded-lg p-10">
             <h1 className="">Experience</h1>
@@ -171,6 +177,7 @@ Experienced in hybrid app development and working with international teams to de
                     <li>Occasionally worked with <strong>AngularJS</strong> and <strong>Java</strong> for feature enhancements.</li>
                     <li>Performed light database operations using <strong>SQLite</strong> and <strong>SQL Server Management</strong>, such as viewing logs and running basic queries.</li>
                     <li>Collaborated closely with project leaders in the <strong>Netherlands</strong> to deliver scalable and reliable solutions.</li>
+                    <li>Trained and supported junior developers in understanding and working with the Checklist product</li>
                     <li>Assisted global clients including <strong>Moduresource</strong>, <strong>Aboma</strong>, <strong>MRUSA</strong>, <strong>Impala</strong>, and others.</li>
                 </ul>
             </div>
