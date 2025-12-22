@@ -22,6 +22,20 @@ export const ProjectList = () => {
             demoLink: "https://robovision.vercel.app/"
         },
         {
+            title: "NepAnime",
+            description: "A anime streaming web app, where users can view all sorts or anime and watch them.",
+            githubLink: "https://github.com/Avshek-raj/Nepanime",
+            language: ["React, JavaScript"],
+            demoLink: "https://nepanime.vercel.app/"
+        },
+        {
+            title: "Nepflix",
+            description: "A simple webapp, that shows latest movies with their trailers.",
+            githubLink: "https://github.com/Avshek-raj/Nepflix",
+            language: ["JavaScript"],
+            demoLink: "https://nepflix.vercel.app/"
+        },
+        {
             title: "Foodrush",
             description: "An android app that allows users to order or sell their foods.",
             githubLink: "https://github.com/Avshek-raj/FoodRush",
