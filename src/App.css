@@ -20,7 +20,7 @@ body {
 h1{
   font-weight: 700;
   font-style: normal;
-  font-size:30px;
+  font-size: clamp(24px, 5vw, 30px);
 }
 
 footer {
@@ -61,11 +61,36 @@ button:hover{
 }
 
 .skillItem {
-  margin-right: 25px;
-  margin-left: 25px;
-
+  margin: 0.5rem;
+  flex: 0 0 auto;
 }
 
 a.active {
   color: red;
+}
+
+/* Mobile Navigation Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  h1 {
+    font-size: clamp(20px, 6vw, 28px);
+  }
 }

@@ -17,162 +17,153 @@ import { ProjectList } from "../ui/ProjectList";
 
 export const Home = () => {
     return <>
-        <div className="px-20 flex flex-row col-span-2">
-            <div className="text-start flex-1">
-                <p className="font-bold  text-8xl [text-shadow:_2px_2px_10px_black]">Hi, I'm</p>
-                <p className="font-bold text-red-500 text-8xl hover:text-[6.2rem] transition-size duration-300 [text-shadow:_2px_2px_10px_black]">Abhishek Raj</p>
-                <p className="font-bold text-yellow-100 text-8xl [text-shadow:_2px_2px_10px_black]">Singh</p>
+        <div className="px-4 sm:px-6 md:px-10 lg:px-20 flex flex-col lg:flex-row gap-6 lg:gap-0">
+            <div className="text-start flex-1 flex flex-col justify-center">
+                <p className="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-8xl [text-shadow:_2px_2px_10px_black]">Hi, I'm</p>
+                <p className="font-bold text-red-500 text-4xl sm:text-5xl md:text-6xl lg:text-8xl hover:text-[3rem] sm:hover:text-[3.5rem] md:hover:text-[5rem] lg:hover:text-[6.2rem] transition-size duration-300 [text-shadow:_2px_2px_10px_black]">Abhishek Raj</p>
+                <p className="font-bold text-yellow-100 text-4xl sm:text-5xl md:text-6xl lg:text-8xl [text-shadow:_2px_2px_10px_black]">Singh</p>
                 <br/>
-                <p className="font-bold  text-2xl">Software Engineer 👋</p>
+                <p className="font-bold text-lg sm:text-xl md:text-2xl">Software Engineer 👋</p>
                 <br/>
-                {/* <p className="w-100">I build vibrant, interactive user interfaces suing React & Flutter. With 3+ years in JavaScript and experience leading checklist & inspection tooling at Procit, I deliver beautiful performance apps</p> */}
-                <p className="leading-relaxed text-justify">
- Specializing in creating responsive and intuitive web apps. I focus on building high-performance interfaces using modern technologies like <strong>React</strong>, delivering seamless user experiences across platforms.</p>
-Experienced in hybrid app development and working with international teams to deliver scalable digital products.
+                <p className="leading-relaxed text-justify text-sm sm:text-base md:text-lg">
+                    Specializing in creating responsive and intuitive web apps. I focus on building high-performance interfaces using modern technologies like <strong>React</strong>, delivering seamless user experiences across platforms. Experienced in hybrid app development and working with international teams to deliver scalable digital products.
+                </p>
 
-                <div className="flex flex-row gap-10 my-10">
-                    <button className="px-4 py-2" onClick={() => window.open(window.location.href + "projects", "_self")}>
+                <div className="flex flex-col sm:flex-row gap-4 sm:gap-10 my-6 sm:my-10">
+                    <button className="px-4 py-2 w-full sm:w-auto text-sm sm:text-base" onClick={() => window.open(window.location.href + "projects", "_self")}>
                         <span>View My Work</span>
-                        <span className="font-bold text-xl pl-2">➡︎</span>
+                        <span className="font-bold text-lg sm:text-xl pl-2">➡︎</span>
                     </button>
 
-                    <button className="flex flex-row items-center gap-2" onClick={() => window.open("https://github.com/avshek-raj", "_blank")}>
-                        <FaGithub className="w-5 h-5" />
+                    <button className="flex flex-row items-center justify-center sm:justify-start gap-2 px-4 py-2 w-full sm:w-auto text-sm sm:text-base" onClick={() => window.open("https://github.com/avshek-raj", "_blank")}>
+                        <FaGithub className="w-4 h-4 sm:w-5 sm:h-5" />
                         Github
                     </button>
                 </div>
 
             </div>
-            <div className="flex flex-1 justify-center">
+            <div className="flex flex-1 justify-center items-center mt-6 lg:mt-0">
                 <div className="hover:scale-110 transition-size duration-500">
-                    <img loading = "lazy"
+                    <img loading="lazy"
                         src={avshek}
                         alt="Abhishek Raj Singh"
-                        className="mt-10 w-[400px] h-[400px] rounded-full object-cover  shadow-2xl shadow-black"
+                        className="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[400px] lg:h-[400px] rounded-full object-cover shadow-2xl shadow-black"
                     />
                 </div>
             </div>
-
-
         </div>
-        <h1>Skills</h1>
-        <div className="skills mt-10 flex flex-wrap flex-row mx-18 my-5">
+
+        <h1 className="my-8 sm:my-10 md:my-12">Skills</h1>
+        <div className="skills flex flex-wrap gap-3 sm:gap-4 md:gap-6 justify-center mx-4 sm:mx-6 md:mx-10 lg:mx-18 my-5 py-4 sm:py-6 md:py-8">
             <div className="skillItem">
-                <div className="w-16 h-16  text-white flex items-center justify-center rounded-full text-xl font-bold">
-                    <FaHtml5 className="w-100 h-100" />
+                <div className="w-14 h-14 sm:w-16 sm:h-16 text-white flex items-center justify-center rounded-full text-lg sm:text-xl font-bold">
+                    <FaHtml5 className="w-8 h-8 sm:w-10 sm:h-10" />
                 </div>
-                <p>Html5</p>
+                <p className="text-xs sm:text-sm mt-2">Html5</p>
             </div>
             <div className="skillItem">
-                <div className="w-16 h-16  text-white flex items-center justify-center rounded-full text-xl font-bold">
-                    <BiLogoTailwindCss className="w-100 h-100" />
+                <div className="w-14 h-14 sm:w-16 sm:h-16 text-white flex items-center justify-center rounded-full text-lg sm:text-xl font-bold">
+                    <BiLogoTailwindCss className="w-8 h-8 sm:w-10 sm:h-10" />
                 </div>
-                <p>Tailwindcss</p>
+                <p className="text-xs sm:text-sm mt-2">Tailwindcss</p>
             </div>
             <div className="skillItem">
-                <div className="w-16 h-16  text-white flex items-center justify-center rounded-full text-xl font-bold">
-                    <FaBootstrap className="w-100 h-100" />
+                <div className="w-14 h-14 sm:w-16 sm:h-16 text-white flex items-center justify-center rounded-full text-lg sm:text-xl font-bold">
+                    <FaBootstrap className="w-8 h-8 sm:w-10 sm:h-10" />
                 </div>
-                <p>Bootstrap</p>
+                <p className="text-xs sm:text-sm mt-2">Bootstrap</p>
             </div>
             <div className="skillItem">
-                <div className="w-16 h-16  text-white flex items-center justify-center rounded-full text-xl font-bold">
-                    <BiLogoJavascript className="w-100 h-100" />
+                <div className="w-14 h-14 sm:w-16 sm:h-16 text-white flex items-center justify-center rounded-full text-lg sm:text-xl font-bold">
+                    <BiLogoJavascript className="w-8 h-8 sm:w-10 sm:h-10" />
                 </div>
-                <p>Javascript</p>
+                <p className="text-xs sm:text-sm mt-2">Javascript</p>
             </div>
             <div className="skillItem">
-                <div className="w-16 h-16  text-white flex items-center justify-center rounded-full text-xl font-bold">
-                    <FaReact className="w-100 h-100" />
+                <div className="w-14 h-14 sm:w-16 sm:h-16 text-white flex items-center justify-center rounded-full text-lg sm:text-xl font-bold">
+                    <FaReact className="w-8 h-8 sm:w-10 sm:h-10" />
                 </div>
-                <p>React</p>
+                <p className="text-xs sm:text-sm mt-2">React</p>
             </div>
             <div className="skillItem">
-                <div className="w-16 h-16  text-white flex items-center justify-center rounded-full text-xl font-bold">
-                    <FaFlutter className="w-100 h-100" />
+                <div className="w-14 h-14 sm:w-16 sm:h-16 text-white flex items-center justify-center rounded-full text-lg sm:text-xl font-bold">
+                    <FaFlutter className="w-8 h-8 sm:w-10 sm:h-10" />
                 </div>
-                <p>Flutter</p>
+                <p className="text-xs sm:text-sm mt-2">Flutter</p>
             </div>
             <div className="skillItem">
-                <div className="w-16 h-16  text-white flex items-center justify-center rounded-full text-xl font-bold">
-                    <DiDart className="w-100 h-100" />
+                <div className="w-14 h-14 sm:w-16 sm:h-16 text-white flex items-center justify-center rounded-full text-lg sm:text-xl font-bold">
+                    <DiDart className="w-8 h-8 sm:w-10 sm:h-10" />
                 </div>
-                <p>Dart</p>
+                <p className="text-xs sm:text-sm mt-2">Dart</p>
             </div>
             <div className="skillItem">
-                <div className="w-16 h-16  text-white flex items-center justify-center rounded-full text-xl font-bold">
-                    <FaJava className="w-100 h-100" />
+                <div className="w-14 h-14 sm:w-16 sm:h-16 text-white flex items-center justify-center rounded-full text-lg sm:text-xl font-bold">
+                    <FaJava className="w-8 h-8 sm:w-10 sm:h-10" />
                 </div>
-                <p>Java</p>
+                <p className="text-xs sm:text-sm mt-2">Java</p>
             </div>
             <div className="skillItem">
-                <div className="w-16 h-16  text-white flex items-center justify-center rounded-full text-xl font-bold">
-                    <SiApachecordova className="w-100 h-100" />
+                <div className="w-14 h-14 sm:w-16 sm:h-16 text-white flex items-center justify-center rounded-full text-lg sm:text-xl font-bold">
+                    <SiApachecordova className="w-8 h-8 sm:w-10 sm:h-10" />
                 </div>
-                <p>Cordova</p>
+                <p className="text-xs sm:text-sm mt-2">Cordova</p>
             </div>
             <div className="skillItem">
-                <div className="w-16 h-16  text-white flex items-center justify-center rounded-full text-xl font-bold">
-                    <FaAndroid className="w-100 h-100" />
+                <div className="w-14 h-14 sm:w-16 sm:h-16 text-white flex items-center justify-center rounded-full text-lg sm:text-xl font-bold">
+                    <FaAndroid className="w-8 h-8 sm:w-10 sm:h-10" />
                 </div>
-                <p>Android</p>
+                <p className="text-xs sm:text-sm mt-2">Android</p>
             </div>
             <div className="skillItem">
-                <div className="w-16 h-16  text-white flex items-center justify-center rounded-full text-xl font-bold">
-                    <BiLogoFirebase className="w-100 h-100" />
+                <div className="w-14 h-14 sm:w-16 sm:h-16 text-white flex items-center justify-center rounded-full text-lg sm:text-xl font-bold">
+                    <BiLogoFirebase className="w-8 h-8 sm:w-10 sm:h-10" />
                 </div>
-                <p>Firebase</p>
+                <p className="text-xs sm:text-sm mt-2">Firebase</p>
             </div>
             <div className="skillItem">
-                <div className="w-16 h-16  text-white flex items-center justify-center rounded-full text-xl font-bold">
-                    <PiFileSql className="w-100 h-100" />
+                <div className="w-14 h-14 sm:w-16 sm:h-16 text-white flex items-center justify-center rounded-full text-lg sm:text-xl font-bold">
+                    <PiFileSql className="w-8 h-8 sm:w-10 sm:h-10" />
                 </div>
-                <p>SQL</p>
+                <p className="text-xs sm:text-sm mt-2">SQL</p>
             </div>
             <div className="skillItem">
-                <div className="w-16 h-16  text-white flex items-center justify-center rounded-full text-xl font-bold">
-                    <SiSqlite className="w-100 h-100" />
+                <div className="w-14 h-14 sm:w-16 sm:h-16 text-white flex items-center justify-center rounded-full text-lg sm:text-xl font-bold">
+                    <SiSqlite className="w-8 h-8 sm:w-10 sm:h-10" />
                 </div>
-                <p>SQLite</p>
+                <p className="text-xs sm:text-sm mt-2">SQLite</p>
             </div>
             <div className="skillItem">
-                <div className="w-16 h-16 text-white flex items-center justify-center rounded-full text-xl font-bold">
-                    <FaGithub className="w-100 h-100" />
+                <div className="w-14 h-14 sm:w-16 sm:h-16 text-white flex items-center justify-center rounded-full text-lg sm:text-xl font-bold">
+                    <FaGithub className="w-8 h-8 sm:w-10 sm:h-10" />
                 </div>
-                <p>Github</p>
+                <p className="text-xs sm:text-sm mt-2">Github</p>
             </div>
             <div className="skillItem">
-                <div className="w-16 h-16 text-white flex items-center justify-center rounded-full text-xl font-bold">
-                    <DiDocker className="w-100 h-100" />
+                <div className="w-14 h-14 sm:w-16 sm:h-16 text-white flex items-center justify-center rounded-full text-lg sm:text-xl font-bold">
+                    <DiDocker className="w-8 h-8 sm:w-10 sm:h-10" />
                 </div>
-                <p>Docker</p>
+                <p className="text-xs sm:text-sm mt-2">Docker</p>
             </div>
             <div className="skillItem">
-                <div className="w-16 h-16 text-white flex items-center justify-center rounded-full text-xl font-bold">
-                    <DiPython className="w-100 h-100" />
+                <div className="w-14 h-14 sm:w-16 sm:h-16 text-white flex items-center justify-center rounded-full text-lg sm:text-xl font-bold">
+                    <DiPython className="w-8 h-8 sm:w-10 sm:h-10" />
                 </div>
-                <p>Python</p>
+                <p className="text-xs sm:text-sm mt-2">Python</p>
             </div>
         </div>
-        <div className="experience opacity-75 bg-black m-20 rounded-lg p-10">
+
+        <div className="experience opacity-75 bg-black mx-4 sm:mx-6 md:mx-10 lg:m-20 rounded-lg p-6 sm:p-8 md:p-10">
             <h1 className="">Experience</h1>
-            <div className="flex mt-10 flex-row justify-between w-full">
-                <p className="mx-20 text-xl"><strong>Procit BV</strong></p>
-                <p className=" mx-20 text-lg" >(July-2022 to Oct-2025)</p>
+            <div className="flex flex-col sm:flex-row mt-6 sm:mt-10 justify-between gap-4 w-full">
+                <p className="text-lg sm:text-xl md:text-2xl"><strong>Procit BV</strong></p>
+                <p className="text-base sm:text-lg md:text-xl">(July-2022 to Oct-2025)</p>
             </div>
-            <p className="text-left mx-20 text-sm">(Front-end developer) 3+ yrs</p>
+            <p className="text-left text-xs sm:text-sm mt-4">(Front-end developer) 3+ yrs</p>
 
-{/* <p className="mx-20 my-5 text-justify leading-relaxed">
-  At <strong>Procit BV</strong>, I worked for 3 yrs and 4 months as a <strong>Front-End Developer</strong>, focusing on web and Android app development using <strong>Cordova</strong>.  
-  I led the development of the company’s flagship <strong>Checklist</strong> product — a digital inspection and maintenance platform designed to streamline data collection and reporting for industries such as manufacturing and oil & gas.  
-  My primary role involved building responsive user interfaces, integrating APIs, and optimizing the overall front-end performance to ensure a seamless user experience across platforms.  
-  I occasionally worked with <strong>AngularJS</strong> and <strong>Java</strong> for feature enhancements and used <strong>SQLite</strong> and <strong>SQL Server Management</strong> for light database operations, such as viewing logs and running basic queries.  
-  Throughout the project, I collaborated closely with project leaders in the <strong>Netherlands</strong> to deliver scalable solutions and assisted global clients including <strong>Moduresource</strong>, <strong>Aboma</strong>, <strong>MRUSA</strong>, <strong>Impala</strong>, and others.
-</p> */}
-
-            <div className="mx-20 my-5">
-                <ul className="list-disc list-inside space-y-2 text-justify leading-relaxed">
-                    <li>Led the development of the company’s flagship <strong>Checklist</strong> product — a digital inspection and maintenance platform for industries like manufacturing and oil & gas.</li>
+            <div className="mx-0 sm:mx-4 md:mx-10 my-4 sm:my-5">
+                <ul className="list-disc list-inside space-y-2 text-justify leading-relaxed text-sm sm:text-base">
+                    <li>Led the development of the company's flagship <strong>Checklist</strong> product — a digital inspection and maintenance platform for industries like manufacturing and oil & gas.</li>
                     <li>Built responsive user interfaces, integrated APIs, and optimized front-end performance to deliver a seamless user experience across web and Android platforms.</li>
                     <li>Occasionally worked with <strong>AngularJS</strong> and <strong>Java</strong> for feature enhancements.</li>
                     <li>Performed light database operations using <strong>SQLite</strong> and <strong>SQL Server Management</strong>, such as viewing logs and running basic queries.</li>
@@ -181,11 +172,9 @@ Experienced in hybrid app development and working with international teams to de
                     <li>Assisted global clients including <strong>Moduresource</strong>, <strong>Aboma</strong>, <strong>MRUSA</strong>, <strong>Impala</strong>, and others.</li>
                 </ul>
             </div>
-
-
         </div>
+
         <div className="">
-            
             <ProjectList />
         </div>
     </>

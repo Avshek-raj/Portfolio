@@ -72,46 +72,43 @@ export const ProjectList = () => {
         },
     ]
     return <>
-        <div className="flex flex-row flex-wrap justify-center">
-            <h1>Projects</h1>
-            <ul className="flex flex-row flex-wrap justify-between m-15">
+        <div className="flex flex-col w-full py-8 px-4 sm:px-6 md:px-10 lg:px-20">
+            <h1 className="w-full mb-8 sm:mb-10">Projects</h1>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 w-full">
                 {projects.map((project, index) => {
                     return (
-                        <div key={index} className="w-120 bg-white/10 hover:scale-101 border p-4 my-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                            <div key={index} className="bg-white/20 border p-4 rounded-lg hover:scale-101 hover:bg-white/40 transition-colors duration-300 cursor-pointer">
-                                <h2 className="text-2xl font-bold mb-2">{project.title}</h2>
-                                <p className="mb-4">{project.description.length > 135 ? project.description.substring(0, 135) + "..." : project.description}</p>
+                        <div key={index} className="bg-white/10 hover:scale-105 border p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                            <div className="bg-white/20 border p-4 rounded-lg hover:bg-white/40 transition-colors duration-300 cursor-pointer mb-4 flex-1">
+                                <h2 className="text-lg sm:text-xl font-bold mb-2">{project.title}</h2>
+                                <p className="text-xs sm:text-sm">{project.description.length > 135 ? project.description.substring(0, 135) + "..." : project.description}</p>
                             </div>
-                            <div className="mb-2 justify-between flex gap-2">
-                                <div className="language-section flex flex-row">
+                            <div className="flex flex-col gap-3 sm:gap-2">
+                                <div className="language-section flex flex-row flex-wrap gap-2">
                                     {project.language.map((lang, langIndex) => (
-                                        <span key={langIndex} className="w-auto my-2 block border text-sm px-2 py-1 rounded-sm mr-2 ">{lang}</span>
+                                        <span key={langIndex} className="w-auto block border text-xs px-2 py-1 rounded-sm">{lang}</span>
                                     ))}
                                 </div>
-                                <div className="action-button flex flex-row ">
+                                <div className="action-button flex flex-row gap-2">
                                     {project.demoLink ? 
-                                    <a href={project.demoLink || ""} target="_blank" rel="noopener noreferrer" className="mr-2 ">
-                                        <button className="my-2 text-sm h-7 px-3 flex items-center rounded-sm justify-center ">
+                                    <a href={project.demoLink || ""} target="_blank" rel="noopener noreferrer" className="flex-1">
+                                        <button className="w-full my-2 text-xs sm:text-sm h-8 px-2 flex items-center rounded-sm justify-center hover:bg-red-600">
                                             Demo
                                         </button>
                                     </a>
                                     : ""}
-                                    <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="mr-2 ">
-                                        <button className="my-2 text-sm h-7 px-3 flex items-center justify-center ">
+                                    <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className={project.demoLink ? "flex-1" : "w-full"}>
+                                        <button className="w-full my-2 text-xs sm:text-sm h-8 px-2 flex items-center rounded-sm justify-center hover:bg-red-600">
                                             Github
                                         </button>
                                     </a>
                                 </div>
 
                             </div>
-                            
                         </div>
                     )
 
                 })}
-            </ul>
-
-                    
+            </div>
         </div>
     </>
 }
