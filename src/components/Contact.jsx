@@ -70,7 +70,7 @@ export const Contact = () => {
                 <h1 className="mb-4 text-base sm:text-lg">Get in Touch</h1>
                 <p className="mb-4 text-xs sm:text-sm leading-relaxed">I'd love to hear from you! Whether you have a question, a project idea, or just want to say hello, feel free to reach out.</p>
                 <div className="space-y-2 text-xs sm:text-sm">
-                    <p className="mb-2"><strong>Email: </strong><span className="break-all">mail.ashek@gmail.com</span></p>
+                    <p className="mb-2"><strong>Email: </strong><span className="break-all">mail.avshek@gmail.com</span></p>
                     <p className="mb-2"><strong>Facebook: </strong><a className="hover:text-red-500 break-all" target="_blank" href="https://www.facebook.com/avshek.rajsingh/">facebook.com/avshek.rajsingh</a> </p>
                     <p className="mb-2"><strong>Instagram: </strong><a className="hover:text-red-500 break-all" target="_blank" href="https://www.instagram.com/avshek_raj/">instagram.com/avshek_raj/</a> </p>
                     <p className="mb-2"><strong>LinkedIn: </strong><a className="hover:text-red-500 break-all" target="_blank" href="https://www.linkedin.com/in/avshek-raj/">linkedin.com/in/avshek-raj/</a> </p>
