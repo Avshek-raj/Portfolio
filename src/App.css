@@ -70,17 +70,23 @@ a.active {
 }
 
 /* Mobile Navigation Hamburger */
+
+button.hamburger {
+  background-color: transparent;
+}
+
 .hamburger {
   display: none;
   flex-direction: column;
   cursor: pointer;
+  /* background-color: #333; */
 }
 
 .hamburger span {
   width: 25px;
   height: 3px;
   background-color: white;
-  margin: 5px 0;
+  margin: 2px 0;
   transition: 0.3s;
 }
 
