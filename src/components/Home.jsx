@@ -157,12 +157,12 @@ export const Home = () => {
             <h1 className="">Experience</h1>
             <div className="flex flex-col sm:flex-row mt-6 sm:mt-10 justify-between gap-4 w-full">
                 <p className="text-lg sm:text-xl md:text-2xl"><strong>Procit BV</strong></p>
-                <p className="text-base sm:text-lg md:text-xl">(July-2022 to Oct-2025)</p>
+                <p className="text-base sm:text-sm md:text-sm">(July-2022 to Oct-2025)</p>
             </div>
             <p className="text-left text-xs sm:text-sm mt-4">(Front-end developer) 3+ yrs</p>
 
             <div className="mx-0 sm:mx-4 md:mx-10 my-4 sm:my-5">
-                <ul className="list-disc list-inside space-y-2 text-justify leading-relaxed text-sm sm:text-base">
+                {/* <ul className="list-disc list-inside space-y-2 text-justify leading-relaxed text-sm sm:text-base">
                     <li>Led the development of the company's flagship <strong>Checklist</strong> product — a digital inspection and maintenance platform for industries like manufacturing and oil & gas.</li>
                     <li>Built responsive user interfaces, integrated APIs, and optimized front-end performance to deliver a seamless user experience across web and Android platforms.</li>
                     <li>Occasionally worked with <strong>AngularJS</strong> and <strong>Java</strong> for feature enhancements.</li>
@@ -170,7 +170,18 @@ export const Home = () => {
                     <li>Collaborated closely with project leaders in the <strong>Netherlands</strong> to deliver scalable and reliable solutions.</li>
                     <li>Trained and supported junior developers in understanding and working with the Checklist product</li>
                     <li>Assisted global clients including <strong>Moduresource</strong>, <strong>Aboma</strong>, <strong>MRUSA</strong>, <strong>Impala</strong>, and others.</li>
-                </ul>
+                </ul> */}
+                <ul className="list-disc list-inside space-y-2 text-justify leading-relaxed text-sm sm:text-base">
+    <li>⚡ <strong>Led development</strong> of the hybrid web & mobile <strong>Checklist</strong> platform for international clients (<strong>Moduresource</strong>, <strong>Aboma</strong>, <strong>MRUSA</strong>, <strong>Impala</strong>).</li>
+    <li>💻 <strong>Front-end</strong> development using <strong>Vanilla JavaScript</strong> and hybrid mobile app with <strong>Java (Cordova)</strong>.</li>
+    <li>🔒 Implemented <strong>secure authentication</strong> using <strong>Auth0</strong> and <strong>OIDC</strong>.</li>
+    <li>🚀 <strong>Performance optimization</strong> — reduced checklist load & save times for faster workflow.</li>
+    <li>📦 Added <strong>offline capability</strong> using <strong>IndexedDB</strong> and implemented client-side <strong>image compression</strong>.</li>
+    <li>🎨 Developed <strong>UI features</strong> such as sticky headers, accordion-style menus, and custom checklist components.</li>
+    <li>🧑‍🏫 <strong>Mentored junior developers</strong>, improving code quality and team productivity.</li>
+    <li>🛠 <strong>Issue resolution</strong> — analyzed logs and fixed client-reported bugs.</li>
+    <li>🤝 <strong>Client collaboration</strong> — translated requirements into functional, production-ready solutions.</li>
+</ul>
             </div>
         </div>
 

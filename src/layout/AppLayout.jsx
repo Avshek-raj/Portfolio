@@ -35,11 +35,7 @@ import { useEffect, useState } from "react";
 
 export const AppLayout = () => {
     const images = [
-        "home_background1.jpg",
-        "home_background2.jpg",
         "home_background3.jpg",
-        "home_background4.jpg",
-        "home_background5.jpg",
     ];
     const cacheCurrentIndex = parseInt(localStorage.currentIndex);
     const [currentIndex, setCurrentIndex] = useState(cacheCurrentIndex || 0);
